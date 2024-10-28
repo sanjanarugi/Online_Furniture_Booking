@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+         background-color: blanchedalmond;
+         }
+         li {
+            display: flex;
+            gap: 10px;
+         }
+         .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      gap: 20px; /* Space between products */
+    }
+
+    /* Individual product card styling */
+    .product-card {
+      background-color: #fff;
+      border: 3px solid #ddd;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.20); /* Slightly enlarges on hover */
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div style="background-color:  rgb(9, 121, 150);">
+           <h1>Welcome to Our Furniture Store</h1>
+    
+            <nav>
+                
+                <li style="gap: 50px;">
+                    <a href="#products" style="color: #ccc;text-decoration: solid; font-size: x-large;font-weight: 100;">products</a>
+                    <a href="#about" style="color: #ccc;text-decoration: solid;font-size: x-large;font-weight: 100;">About Us</a>
+                    <a href="#contact" style="color: #ccc;text-decoration: solid;font-size: x-large;font-weight: 100;">Contact</a>
+                    <a href="#logout" style="color: #ccc;text-decoration: solid;font-size: x-large;font-weight: 100;">Logout</a>
+                </li>
+            
+            </nav>
+        </div>
+    
+    </header>
+</di> 
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-card" style="background-color: blanchedalmond;">
+               
+                <a
+                href="ph.html">
+            <img src="blog-2.jpg" alt="clicable image" style="width:400px;height:auto";></a>
+                <h3>Modern Sofa</h3>
+                <p>Price: $499</p>
+                <p>Description: A stylish modern sofa that fits any living room.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+                <button type="submit" style="background-color: antiquewhite;font-size: large;font-weight: 100;">ORDER</butto>
+            </div>
+        <form action="order.html" method="post">
+            <div class="product-card" style="background-color: blanchedalmond;">
+                <a
+                href="din.html">
+            <img src="dii.jpeg" alt="clicable image" style="width:400px;height:auto";></a>
+                <h3>Wooden Dining Table</h3>
+                <p>Price: $799</p>
+                <p>Description: A sturdy wooden dining table perfect for family gatherings.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+               <button type="submit" style="background-color: antiquewhite;font-size: large;font-weight: 100;">ORDER</button>
+            </div>
+            <div class="product-card" style="background-color: blanchedalmond;">
+                <a
+                href="chair.html">
+            <img src="product-3.png" alt="clicable image" style="width:400px;height:auto";></a>
+                <h3>stylish</h3>
+                <p>Price: $299</p>
+                <p>Description: A spacious chair for all your favorite home.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+                <button type="submit" style="background-color: antiquewhite;font-size: large;font-weight: 100;">ORDER</button>
+        </form>
+            </div>
+        </section>
+
+        <section id="about">
+            <form action="ph.html" method="post">
+                <button type="submit" style="background-color: antiquewhite;font-size: x-large;">Next</button>
+            </form>
+            <h2>About Us</h2>
+            <p>We are a family-owned furniture store with over 20 years of experience in providing quality furniture to our customers. Our mission is to deliver stylish and affordable furniture for every home.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: K.C Rani Road Gadag, 582101 ST 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@furniturestore.com</p>
+            <p>Website: <a href="https://www.furniturestore.com">www.furniturestore.com</a></p>
+        </section>
+        <section id="logout">
+            <form action="Furniture_shopping_website.html" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">logout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Furniture Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function showMessage() 
+        {
+            alert("This product is Add to your cart");
+        }
+    </script>
+</body>
+</html>

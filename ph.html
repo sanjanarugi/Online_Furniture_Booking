@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<form action="order.html" method="post">
+        <section id="products">
+            <h2>Our Products</h2>
+            
+            <div class="product">
+                <img src="bn.jpeg" alt="Modern Sofa" width="400" height="390" >
+                <h3>Modern Sofa</h3>
+                <p>Price: $49</p>
+                <p>Description: A stylish modern sofa that fits any living room.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+                <button type="submit" style="background-color:antiquewhite;font-size: large;font-weight: 100;">ORDER</button>
+                
+
+            </div>
+            <div class="product">
+                <img src="im.jpeg" alt="hall furnitures" width="400" height="390">
+                <h3>sofa</h3>
+                <p>Price: $99</p>
+                <p>Description: A sofa perfect for family gatherings.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+                <button type="submit" style="background-color: antiquewhite;font-size: large;font-weight: 100;">ORDER</button>
+            </div>
+            <div class="product">
+                <img src="hn.jpeg" alt="sofa" width="430" height="350">
+                <h3>stylish chair</h3>
+                <p>Price: $29</p>
+                <p>Description: A spacious sofa for all your favorite hall.</p>
+                <button onclick="showMessage()">Add to Cart</button>
+                <button type="submit" style="background-color: antiquewhite;font-size: large;font-weight: 100;">ORDER</button>
+            </div>
+        </section>
+    </form>        
+
+        <section id="about">
+            <form action="chair.html" method="post">
+                <button type="submit" style="background-color: antiquewhite;font-size: x-large;">Next</button>
+            </form>
+            <h2>About Us</h2>
+            <p>We are a family-owned furniture store with over 20 years of experience in providing quality furniture to our customers. Our mission is to deliver stylish and affordable furniture for every home.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: K.C Rani Road, Gadag-582101 ST 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@furniturestore.com</p>
+            <p>Website: <a href="https://www.furniturestore.com">www.furniturestore.com</a></p>
+        </section>
+
+        <section id="Logout">
+            <h2>Logout</h2>
+           
+            <form action="Furniture_shopping_website.html"post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Logout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Furniture Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function showMessage() 
+        {
+            alert("This product is Add to your cart");
+        }
+    </script>
+</body>
+</html>
+

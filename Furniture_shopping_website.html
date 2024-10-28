@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen</title>
+  <style>
+    /* Full-page splash screen styling */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    /* Styling for splash image */
+    .splash-image {
+      width: 1000%;
+      height: 1000%;
+      object-fit: cover;
+      max-width: 600px; /* Optional max width for responsive design */
+      max-height: 400px; /* Optional max height */
+    }
+  </style>
+
+  <script>
+    // Redirect to home page after 3 seconds
+    function redirectToHome() {
+      setTimeout(function() {
+        window.location.href = 'main.html'; // Replace 'home.html' with your home page file
+      }, 2500); // 3000ms = 3 seconds
+    }
+  </script>
+</head>
+<body onload="redirectToHome()">
+  <!-- Splash screen content -->
+  <img src="logo2.jpeg" alt="Splash Image" class="splash-image">
+</body>
+</html>
